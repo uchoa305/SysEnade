@@ -335,6 +335,9 @@
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.html">Listar</a></li>
               </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.html">Anotações</a></li>
+              </ul>
             </div>
           </li>
         </ul>
@@ -344,29 +347,50 @@
         <div class="content-wrapper">
           <div class="row">
 
-            <!-- COMEÇO - FORM PARA CURSOS -->
+            <!-- COMEÇO - FORM PARA Disciplinas -->
             <div class="col-md-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Cadastro de Cursos</h4>
+                  <h4 class="card-title">Cadastro de Disciplinas</h4>
                   <p class="card-description">
                     Todos os dados são obrigatorios. 
                   </p>
                   <form class="forms-sample">
-                    <div class="form-group">
-                      <label for="exampleInputUsername1">Nome</label>
-                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="nome do curso" name="nome">
+                    <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nome</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="exampleInputUsername2" placeholder="nome da disciplina" name="nome">
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Sigla</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="sigla do curso" name="sigla">
+                    <div class="form-group row">
+                      <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Sigla</label>
+                      <div class="col-sm-9">
+                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="sigla da disciplina" name="siglas">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="exampleInputMobile" class="col-sm-3 col-form-label">Cursos</label>
+                      <div class="col-sm-9">
+                        <select class="js-example-basic-multiple w-100" multiple="multiple" name="cursos">
+                          <option value="AL">Opções de cursos</option>
+                          <option value="WY">Wyoming</option>
+                          <option value="AM">America</option>
+                          <option value="CA">Canada</option>
+                          <option value="RU">Russia</option>
+                        </select>
+                      </div>
+                      <p>  Selecione mais de um cursos segurando CTRL</p>
                     </div>
                     <button type="submit" class="btn btn-primary me-2">Cadastrar</button>
                     <button class="btn btn-light">Limpar</button>
                   </form>
                 </div>
               </div>
-            </div>           
+            </div>
+            <!-- Fim - FORM PARA Disciplinas -->
+
+            <!-- COMEÇO - FORM PARA Questões -->
+            
           </div>
         </div>
         <!-- content-wrapper ends -->

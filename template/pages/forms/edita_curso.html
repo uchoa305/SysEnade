@@ -35,12 +35,12 @@
           </button>
         </div>
         <div>
-          <a class="navbar-brand brand-logo" href="../../index.html">
-           SysEnade
-          </a>
-          <a class="navbar-brand brand-logo-mini" href="../../index.html">
+          <a class="navbar-brand brand-logo" href="index.html">
             SysEnade
-          </a>
+           </a>
+           <a class="navbar-brand brand-logo-mini" href="index.html">
+             SysEnade
+           </a>
         </div>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-top"> 
@@ -264,15 +264,10 @@
                   <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
                   <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
                 </div>
-                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
-                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
-                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
-                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
-                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> Meu perfil </a>
+                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sair</a>
               </div>
             </li>
-
-
           </li>
           <li class="nav-item nav-category">Funcionalidades</li>
           <li class="nav-item">
@@ -283,7 +278,7 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.html">Cadastrar</a></li>
+                <li class="nav-item"><a class="nav-link" href="cadastro_curso.html">Cadastrar</a></li>
               </ul>
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.html">Listar</a></li>
@@ -298,7 +293,7 @@
             </a>
             <div class="collapse" id="charts">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.html">Cadastrar</a></li>
+                <li class="nav-item"><a class="nav-link" href="cadastro_disciplina.html">Cadastrar</a></li>
               </ul>
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.html">Listar</a></li>
@@ -313,7 +308,7 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.html">Cadastrar</a></li>
+                <li class="nav-item"><a class="nav-link" href="cadastro_questão.html">Cadastrar</a></li>
               </ul>
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.html">Listar</a></li>
@@ -325,6 +320,25 @@
               <i class="menu-icon mdi mdi-layers-outline"></i>
               <span class="menu-title">Consultas</span>     
             </a> 
+          </li>
+          <li class="nav-item nav-category">Configurações</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <i class="menu-icon mdi mdi-human-greeting"></i>
+              <span class="menu-title">Coordenador</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.html">Cadastrar</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.html">Listar</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.html">Anotações</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
       </nav>
@@ -344,157 +358,18 @@
                   <form class="forms-sample">
                     <div class="form-group">
                       <label for="exampleInputUsername1">Nome</label>
-                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="nome do curso">
+                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="nome do curso" name="nome">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Sigla</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="sigla do curso">
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="sigla do curso" name="sigla">
                     </div>
                     <button type="submit" class="btn btn-primary me-2">Cadastrar</button>
                     <button class="btn btn-light">Limpar</button>
                   </form>
                 </div>
               </div>
-            </div>
-
-            <!-- Fim - FORM PARA CURSOS -->
-
-            <!-- COMEÇO - FORM PARA Disciplinas -->
-            <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Cadastro de Disciplinas</h4>
-                  <p class="card-description">
-                    Todos os dados são obrigatorios. 
-                  </p>
-                  <form class="forms-sample">
-                    <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nome</label>
-                      <div class="col-sm-9">
-                        <input type="text" class="form-control" id="exampleInputUsername2" placeholder="nome da disciplina">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Sigla</label>
-                      <div class="col-sm-9">
-                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="sigla da disciplina">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="exampleInputMobile" class="col-sm-3 col-form-label">Cursos</label>
-                      <div class="col-sm-9">
-                        <select class="js-example-basic-multiple w-100" multiple="multiple">
-                          <option value="AL">Opções de cursos</option>
-                          <option value="WY">Wyoming</option>
-                          <option value="AM">America</option>
-                          <option value="CA">Canada</option>
-                          <option value="RU">Russia</option>
-                        </select>
-                      </div>
-                      <p>  Selecione mais de um cursos segurando CTRL</p>
-                    </div>
-                    <button type="submit" class="btn btn-primary me-2">Cadastrar</button>
-                    <button class="btn btn-light">Limpar</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <!-- Fim - FORM PARA Disciplinas -->
-
-            <!-- COMEÇO - FORM PARA Questões -->
-            <div class="col-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Cadastro de Questões</h4>
-                  <form class="forms-sample">
-                    <div class="form-group">
-                      <div class="form-group row">
-                        <div class="col-sm-4">
-                           <label for="exampleInputName1">N° *</label>
-                           <input type="text" class="form-control" id="exampleInputName1" placeholder="Numero da questão">
-                        </div>
-                        <div class="col-sm-4">
-                            <label for="exampleInputName1">Ano *</label>
-                            <input type="text" class="form-control" id="exampleInputName1" placeholder="Ano  da prova">
-                        </div>
-                        
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <div class="col-sm-4">
-                        <label for="exampleInputMobile" class="col-sm-3 col-form-label">Cursos *</label>
-                        
-                          <select class="js-example-basic-multiple w-100" multiple="multiple">
-                            <option value="AL">Opções de cursos</option>
-                            <option value="WY">Wyoming</option>
-                            <option value="AM">America</option>
-                            <option value="CA">Canada</option>
-                            <option value="RU">Russia</option>
-                          </select>
-                        
-                        <p>  Selecione mais de um cursos segurando CTRL</p>
-                      </div>
-                      <div class="col-sm-4">
-                        <label for="exampleInputMobile" class="col-sm-3 col-form-label">Disciplinas *</label>
-                        
-                          <select class="js-example-basic-multiple w-100" multiple="multiple">
-                            <option value="AL">Opções de cursos</option>
-                            <option value="WY">Wyoming</option>
-                            <option value="AM">America</option>
-                            <option value="CA">Canada</option>
-                            <option value="RU">Russia</option>
-                          </select>
-                        
-                        <p>  Selecione mais de uma disciplina segurando CTRL</p>
-                      </div>
-                    </div>
-                   
-                    <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Enunciado</label>
-                      <textarea class="form-control" id="txt_enunciado" rows="20"></textarea>
-                   </div>
-                    
-                   <div class="form-group row">
-                    <div class="col-sm-4">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Selecione se for optativa</label>
-                      </div>
-                        <label for="exampleInputName1">A:</label>
-                        <textarea class="form-control" id="alternativa_a" rows="6"disabled></textarea>
-
-                        <label for="exampleInputName1">B:</label>
-                        <textarea class="form-control" id="alternativa_b" rows="6"disabled></textarea>
-
-                        <label for="exampleInputName1">C:</label>
-                        <textarea class="form-control" id="alternativa_c" rows="6" disabled></textarea>
-
-                        <label for="exampleInputName1">D:</label>
-                        <textarea class="form-control" id="alternativa_d" rows="6" disabled></textarea>
-
-                        <label for="exampleInputName1">E:</label>
-                        <textarea class="form-control" id="alternativa_e" rows="6" disabled></textarea>
-                    </div>
-                    <div class="col-sm-4">
-                      <label for="exampleInputMobile" class="col-sm-3 col-form-label">Dificuldade *</label>
-                      
-                        <select class="js-example-basic-multiple w-100" multiple="multiple">
-                          <option value="AL" >Opções de dificuldades</option>
-                          <option value="WY">Facil</option>
-                          <option value="AM">Medio</option>
-                          <option value="CA">Dificil</option>
-                          <option value="RU">Russia</option>
-                        </select>
-                      
-                      <p>  Selecione mais de uma disciplina segurando CTRL</p>
-                    </div>
-                  </div>
-                    <button type="submit" class="btn btn-primary me-2">Cadastrar</button>
-                    <button class="btn btn-light">Limpar</button>
-                  </form>
-                </div>
-              </div>
-            </div>
+            </div>           
           </div>
         </div>
         <!-- content-wrapper ends -->
